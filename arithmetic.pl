@@ -1,4 +1,5 @@
 % Exercise 3-3: Arithmetic
+% TEST: ?- % days_left(3, 11, X). and the result is 20.
 
 % Facts for each month of the year
 month(1, january, 31).
@@ -15,4 +16,6 @@ month(11, november, 30).
 month(12, december, 31).
 
 % Rule to calculate days left in a month
-days_left(Month, Day, DaysLeft) :- month(Month, _, TotalDays), DaysLeft is TotalDays - Day.
+days_left(Month, Day, DaysLeft) :- 
+  month(Month, _, TotalDays), 
+  DaysLeft is TotalDays - Day.

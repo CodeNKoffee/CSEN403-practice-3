@@ -1,4 +1,5 @@
 % Exercise 3-2: Ackermann's Function
+% TEST: ?- ackermann(1, 2, Z). and the result is [Z=4].
 
 % ackermann/3
 ackermann(0, Y, Z) :- 
